@@ -24,4 +24,12 @@ function min(numbers) {
   return currentMin;
 }
 
-console.log(min([1, 10, 100, -100, 1000]));
+// console.log(min([1, 10, 100, -100, 1000]));
+
+function avg(numbers) {
+  let total = 0;
+  numbers.forEach(n => (total += n));
+  let numAvg = total / numbers.length;
+  console.log(numAvg);
+}
+avg([1, 3, 8, 27, 45]);
