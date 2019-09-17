@@ -81,7 +81,7 @@ function turtleSteps(arr) {
 // turtleSteps([[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]]);
 
 function reducer(finalSent, word) {
-  let outWord;
+  // console.log(word);
   if (word.length == 3) {
     return finalSent.concat(' ');
   } else {
@@ -92,4 +92,5 @@ function reducer(finalSent, word) {
 let sentence =
   'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
 const newArr = sentence.split(' ');
-console.log(newArr.reduce(reducer));
+// console.log(newArr);
+console.log(newArr.reduce(reducer, ''));
