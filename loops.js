@@ -12,4 +12,16 @@ function max(numbers) {
   return currentMax;
 }
 
-console.log(max([1, 10, 100, -100, 1000]));
+function min(numbers) {
+  let currentMin = numbers[0];
+  let i = 1;
+  while (i < numbers.length) {
+    if (currentMin > numbers[i]) {
+      currentMin = numbers[i];
+    }
+    i++;
+  }
+  return currentMin;
+}
+
+console.log(min([1, 10, 100, -100, 1000]));
