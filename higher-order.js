@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 // hello goodbye
 function repeat(fn, n) {
   for (let i = 0; i < n; i++) {
@@ -82,7 +82,7 @@ function turtleSteps(arr) {
 
 function reducer(finalSent, word) {
   // console.log(word);
-  if (word.length == 3) {
+  if (word.length === 3) {
     return finalSent.concat(' ');
   } else {
     return finalSent.concat(word.charAt(word.length - 1).toUpperCase());
