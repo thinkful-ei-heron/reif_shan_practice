@@ -58,7 +58,7 @@ function hazardWarningCreator(typeOfWarning) {
   };
 }
 
-// const warning = hazardWarningCreator('Rocks on the Road');
+const warning = hazardWarningCreator('Rocks on the Road');
 // warning('Dallas');
 // warning('St Pete');
 // warning('Denver');
